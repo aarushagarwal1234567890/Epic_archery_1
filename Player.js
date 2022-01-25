@@ -6,7 +6,7 @@ class Player {
 
     this.width = width;
     this.height = height;
-    this.image = loadImage("./assets/player.png");
+    this.image = loadImage("player.png");
 //create the rectangular shaped body.
 this.body=Bodies.rectangle (x,y,this.width,this.height);
 
