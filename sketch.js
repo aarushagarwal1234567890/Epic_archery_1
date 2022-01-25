@@ -10,6 +10,7 @@ var computer, computerBase;
 
 
 function setup() {
+ 
   canvas = createCanvas(windowWidth, windowHeight);
 
   engine = Engine.create();
@@ -17,8 +18,9 @@ function setup() {
 
   playerBase = new PlayerBase(300, random(450, height - 350), 180, 150);
 //create a player object from the Player class.
-  player=new Player(285,playerBase.body.position.y - 153,50,180);
-
+positionY=playerBase.body.position.y-153
+  player=new Player(285,positionY,50,180);
+console.log(playerBase.body.position.y-153)
   computerBase = new ComputerBase(
     width - 300,
     random(450, height - 300),
